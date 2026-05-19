@@ -28,6 +28,6 @@ def create_app():
         db.create_all()
 
         from app.routes import api
-        app.register_blueprint(api, url_prefix='/api')
+        app.register_blueprint(api)
 
     return app
